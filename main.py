@@ -30,6 +30,7 @@ def rescale_frame(frame, percent=75):
     height = int(frame.shape[0] * percent/ 100) 
     dim = (width, height) 
     return cv2.resize(frame, dim, interpolation =cv2.INTER_AREA) 
+
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 mpHands = mp.solutions.hands
